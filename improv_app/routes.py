@@ -90,7 +90,7 @@ def chatroom():
 
 @app.route("/chatroom_video")
 def chatroom_video():
-	return render_template("chatroomvideo.html")
+	return render_template_node_pubilc("index.html")
 
 
 if __name__ == "__main__":
