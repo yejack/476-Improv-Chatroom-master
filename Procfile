@@ -1,1 +1,1 @@
-web: npm start
+web: gunicorn improv_app:app
