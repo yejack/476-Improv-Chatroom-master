@@ -19,7 +19,7 @@ app.secret_key = 'development-key'
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index1.html")
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
 	form = SignupForm()
