@@ -1,27 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--
+Code for home page
+-->
 
+{% extends "layout.html" %}
+
+{% block content %}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Node.js | Live Streaming</title>
-    <link rel="stylesheet" href="assets/styles/main.css" media="screen" charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js.map"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/home.css">
 </head>
 
-<body>
+<a name="home"></a>
+<div class="intro-header">
+	<div class="bg-overlay">
+		<div class="container">
 
-    <div class="container">
-        <video class="video-large" autoplay></video>
-        <div class="users-container" id="users-container">
-            <h4>Users</h4>
-            <div id="users"></div>
-        </div>
-    </div>
 
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
-</body>
+				<div class="row">
+						<div class="col-lg-12">
+								<div class="intro-message">
+										<h1>Home Page Description</h1>
+										<h3>Improv with other collaboratively and interactively</h3>
+										<hr class="intro-divider">
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-</html>
+<a  name="Watch"></a>
+<section id="Watch" class="bg-light-gray bounds">
+	<div class="bg-overlay">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-12 text-center">
+								<h2 class="section-heading">Stand-up Comedy</h2>
+								<h3 id="below-section" class="section-subheading text-muted">Work on your Stand up</h3>
+						</div>
+				</div>
+
+				<div class="row">
+						<div class="col-md-4 col-sm-6 portfolio-item">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+							</div>
+								<div class="portfolio-caption">
+										<h4>Watch others live and join right now</h4>
+										<p id="small-text" class="text-muted">Prompts and topics will be randomly provided.</p>
+								</div>
+						</div>
+
+
+
+						<div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+										</div>
+
+
+								<div class="portfolio-caption">
+										<h4>Look Through Old Sessions</h4>
+										<h4>Watch Others: Interact with others by watching other user's live session, give feedback and leave comments</h4>
+
+										<p id="small-text" class="text-muted">Prompts and topics will be randomly provided.</p>
+								</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 portfolio-item">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+										</div>
+
+								<div class="portfolio-caption">
+									 <h4>Browse Archive: Look through past performances that have been archived</h4>
+										<p id="small-text" class="text-muted">Prompts and topics will be randomly provided.</p>
+								</div>
+						</div>
+
+				</div>
+		</div>
+</section>
+
+<a  name="Watch"></a>
+<section id="Watch" class="bg-light-gray bounds">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-12 text-center">
+								<h2 class="section-heading">Threatre Acting</h2>
+								<h3 id="below-section" class="section-subheading text-muted">Perform with others</h3>
+						</div>
+				</div>
+
+				<div class="row">
+						<div class="col-md-4 col-sm-6 portfolio-item">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+							</div>
+								<div class="portfolio-caption">
+										<h4>Create A Session: Create a new room where others can join and perform with you collaboratively</h4>
+
+								</div>
+						</div>
+
+
+
+						<div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+										</div>
+
+
+								<div class="portfolio-caption">
+
+										<h4>watch others live right now</h4>
+										<h4>Watch Others: Interact with others by watching other user's live session, give feedback and leave comments</h4>
+
+								</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 portfolio-item">
+
+										<div class="portfolio-hover">
+												<div class="portfolio-hover-content">
+
+												</div>
+										</div>
+
+								<div class="portfolio-caption">
+									 <h4>Look Thorugh Old Sessions</h4>
+									 <h4>Browse Archive: Look through past performances that have been archived</h4>
+
+								</div>
+						</div>
+
+				</div>
+		</div>
+</section>
+
+{% endblock %}
